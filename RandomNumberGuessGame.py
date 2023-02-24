@@ -1,14 +1,14 @@
 import time
 import random
-a = random.randint(0, 100)
-b=0
+random_number = random.randint(0, 100)
+user_input=0
 print("Welcome! We have a number which is chosen between 0-100. Would you predict it?")
-while b != a:
-    b = int(input("Predict the number: "))
+while user_input != random_number:
+    user_input = int(input("Predict the number: "))
 
-    if b > a:
+    if user_input > random_number:
         print("Nope, go down :)")
-    elif b < a:
+    elif user_input < random_number:
         print("Nope, go up :)")
     else:
         time.sleep(1)
