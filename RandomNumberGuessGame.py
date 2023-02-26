@@ -7,7 +7,7 @@ print("Enter a range that you want to pick a number from!")
 range_min = int(input("min: "))
 range_max = int(input("max: "))
 random_number = random.randint(range_min, range_max)
-range_difference = range_max - range_min
+range_difference = range_max - range_min +1
 points = 100
 while user_input != random_number:
     user_input = int(input("Predict the number: "))
@@ -32,7 +32,3 @@ while user_input != random_number:
         
         print("You tried " + str(attemps_count) + " times and found. And your points:" + str(points))
         continue
-
-
-
-#rangediff - attemp
